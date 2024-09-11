@@ -1,7 +1,7 @@
 <?php
 
-require_once _DIR_.'/../../../database/dbConnection.php';
-include_once _DIR_.'/../../../config/settings-configuration.php';
+require_once __DIR__.'/../../../database/dbConnection.php';
+include_once __DIR__.'/../../../config/settings-configuration.php';
 
 class ADMIN 
 {
@@ -105,7 +105,7 @@ class ADMIN
     }
     public function redirect()
     {
-        echo "<script>alert('Admin must loggin first.'); window.location.href = '../../../';</script>";
+        echo "<script>alert('Admin must loggin first.'); window.location.href = '../../';</script>";
         exit;
     }
 
